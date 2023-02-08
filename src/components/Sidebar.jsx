@@ -1,6 +1,6 @@
 import React from 'react'
 import { Stack } from '@mui/system'
-import { categories } from '../utils/constants'
+import categories from '../utils/constants'
 
 const Sidebar = ({ selectedCategory, setSelectedCategory}) => {
   return (
@@ -24,6 +24,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory}) => {
           <span style={{ color: category.name === selectedCategory ? "white" : "red", marginRight: "15px" }}>
             {category.icon}
           </span>
+
           <span style={{opacity: category.name === selectedCategory ? "1" : "0.8"}}>
             {category.name}
           </span>
